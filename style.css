@@ -1,0 +1,170 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 1440px;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	background-color: rgb(255, 255, 255);
+	height: 100px;
+	width: 100%;
+	box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.08);
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;  
+}
+
+/* -------------------------- header ----------------------*/
+
+.book__button {
+	margin: 20px;
+	color: #fff;
+	width: 200px;
+	height: 60px;
+	background-color: #5B6460;
+	font-family: 'Montserrat', sans-serif;  
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+}
+
+.header__button .book__button {
+	width: 383px;
+	height: 100px;
+	background-color: #5B6460;
+}
+
+.header_links {
+	text-decoration: none;
+}
+
+.link {
+	padding: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.lang {
+	padding-top: 0;
+}
+
+.logo {
+	background: url(./img/logo.svg) no-repeat;
+	width: 71px;
+	height: 65px;
+	
+}
+
+.intro {
+	margin-top: 100px;
+	background: url("/img/Intro1.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+
+.intro .wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.intro__text {
+	margin-top: 50px;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.intro__title {
+	font-weight: 300;
+	font-size: 70px;
+}
+
+.intro__subtitle {
+	height: 60px;
+	width: 333px;
+	margin-top: 40px;
+	margin-right: 84px;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+	line-height: 28px;
+}
+
+/* -------------------------- Intro -------------------- */
+
+.section__one_inner {
+	margin-top: 150px;
+	color: #fff;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.cabin__left {
+	margin-top: 80px;
+	font-family: 'Open Sans', sans-serif;
+	width: 50%;
+	height: 350px;
+	color: #5B6460;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-shadow: 1px 3px 3px #adafae;
+}
+
+.cabin__title {
+	font-size: 40px;
+}
+
+.cabin__subtitle {
+	margin: 50px 0;
+	width: 465px;
+	height: 245px;
+}
+
+.cabin__right {
+	background: url(./img/cabin.png) no-repeat;
+	background-size: cover;
+	width: 50%;
+	height: 438px;
+}
+
+.read__more {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* ----------------------section one ----------------- */
+
+.section__photo {
+	margin-top: 150px;
+	height: 415px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.photo {
+	width: 432px;
+	height: 387px;
+	margin: 0 35px;
+}

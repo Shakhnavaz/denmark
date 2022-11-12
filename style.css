@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+	z-index: 100;
 	position: fixed;
 	top: 0px;
 	background-color: rgb(255, 255, 255);
@@ -29,20 +30,26 @@ body {
 
 .book__button { /* универсальный стиль кнопки заказа */
 	color: #fff;
-	width: 200px;
-	height: 60px;
 	background-color: #5B6460;
-	font-family: 'Montserrat', sans-serif;  
+	font-family: 'Montserrat', sans-serif; 
+	line-height: 28px;
+	letter-spacing: 1px; 
 	font-weight: 300;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	cursor: pointer;
 } 
 
+.book__button:hover {
+	background-color: #808E88;
+}
+
 .header__button {
-    font-size: 14px;
-    margin:  20px 0 20px 20px;
+	width: 200px;
+	height: 60px;
+	font-size: 14px;
+	margin:  20px 0 20px 20px;
 }
 
 
@@ -61,13 +68,14 @@ body {
 
 .lang {
 	padding-top: 0;
+	cursor: pointer;
 }
 
 .logo {
 	background: url(./img/logo.svg) no-repeat;
 	width: 71px;
 	height: 65px;
-	
+	cursor: pointer;
 }
 
 /* -------------------------- header ----------------------*/
@@ -90,9 +98,9 @@ body {
 	margin-top: 80px;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .intro__title {
@@ -114,8 +122,63 @@ body {
 
 /* -------------------------- Intro -------------------- */
 
+.order {
+	z-index: 0;
+	width: 383px;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: -65px;
+	cursor: pointer;
+}
+
+.big__button {
+	width: 263px;
+	height: 100px;
+	font-weight: 18px;
+}
+
+.price__button {
+	width: 120px;
+	height: 100px;
+	background-color: #E9ECE0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.price__text {
+	width: 70px;
+	height: 56px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.price__above {
+	font-weight: 300;
+	text-align: left;
+	font-size: 12px;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.price__under {
+	font-weight: 300;
+	text-align: right;
+	font-size: 12px;
+}
+
+
 .cabin {
-	margin-top: 150px;
+	margin-top: calc(150px - 100px);
 	color: #fff;
 	width: 100%;
 	display: flex;
@@ -139,7 +202,7 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	text-shadow: 1px 3px 3px #bbbdbc;
-    
+	
 }
 
 .cabin__title { 
@@ -150,9 +213,9 @@ body {
 	margin: 50px 0;
 	width: 465px;
 	height: 245px;
-    font-weight: 300;
-    line-height: 30px;
-    color: black;
+	font-weight: 300;
+	line-height: 30px;
+	color: black;
 }
 
 .read__more {
@@ -177,57 +240,67 @@ body {
 }
 
 .forest {
-    margin-top: calc(150px - 26px);
-    width: 100%;
-    height: 650px;
-    display: flex;
-    flex-direction: row;
+	margin-top: calc(150px - 26px);
+	width: 100%;
+	height: 650px;
+	display: flex;
+	flex-direction: row;
 	justify-content: center;
 }
 
-.forest__left {
-    height: 100%;
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-    background: url(./img/map.svg) no-repeat;
+.forest__left { /* map */
+	height: 100%;
+	width: 50%;
+	background-color: rgba(0, 0, 0, 0.4);
+	
 }
 
-.forest__right {
-    height: 100%;
-    width: 50%;
-    background-color: #E9ECE0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.forest__right { 
+	height: 100%;
+	width: 50%;
+	background-color: #E9ECE0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .forest__text {
-    /* margin-top: 80px; */
-    font-family: 'Open Sans', sans-serif;
-    width: 50%;
-    height: 350px;
-    color: #5B6460;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	/* margin-top: 80px; */
+	font-family: 'Open Sans', sans-serif;
+	width: 50%;
+	height: 350px;
+	color: #5B6460;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .forest__title {
-    font-size: 40px;
+	font-size: 40px;
 }
 
 .forest__subtitle {
-    margin: 50px 0;
-    width: 465px;
-    height: 245px;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 30px;
-    color: black;
+	margin: 50px 0;
+	width: 465px;
+	height: 245px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+	color: black;
 }
 
 .facilities {
-    width: 100%;
-    height: 970px;
-    background-color: #5B6460;
+	width: 100%;
+	height: 970px;
+	background-color: #5B6460;
+}
+
+.facilities__title {
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	padding-top: 160px;
 }

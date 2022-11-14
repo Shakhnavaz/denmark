@@ -78,7 +78,7 @@ body {
 	cursor: pointer;
 }
 
-/* -------------------------- header ----------------------*/
+/* INTRO */
 
 .intro {
 	margin-top: 100px;
@@ -120,7 +120,7 @@ body {
 
 }
 
-/* -------------------------- Intro -------------------- */
+/* ORDER BUTTON */
 
 .order {
 	z-index: 0;
@@ -176,6 +176,7 @@ body {
 	font-size: 12px;
 }
 
+/* CABIN */
 
 .cabin {
 	margin-top: calc(150px - 100px);
@@ -223,7 +224,7 @@ body {
 	font-weight: bold;
 }
 
-/* ----------------------section one ----------------- */
+/* SECTION PHOTO */
 
 .section__photo {
 	margin-top: 150px;
@@ -238,6 +239,8 @@ body {
 	height: 387px;
 	margin: 0 35px;
 }
+
+/* FOREST */
 
 .forest {
 	margin-top: calc(150px - 26px);
@@ -289,6 +292,8 @@ body {
 	color: black;
 }
 
+/* FACILITIES */
+
 .facilities {
 	width: 100%;
 	height: 970px;
@@ -302,5 +307,63 @@ body {
 	font-size: 40px;
 	display: flex;
 	justify-content: center;
-	padding-top: 160px;
+	padding-top: 130px;
+}
+
+.fac__container {
+    margin-top: 90px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-column-gap: 90px;
+    grid-row-gap: 50px;
+}
+
+.facilities__item {
+    width: 150px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facilities__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.facilities__text {
+
+    margin-top: 20px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    
+}
+
+/* PANORAMA */
+
+.panorama {
+    width: 100%;
+    height: 704px;
+    display: flex;
+    justify-content: center;
+}
+
+.panorama__left {
+    background: url(./img/volcano.svg);
+    width: 704px;
+    height: 559px;
+}
+
+.panorama__right {
+    background: url(./img/glass-lodge.svg);
+    width: 704px;
+    height: 559px;
 }

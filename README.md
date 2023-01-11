@@ -1,2 +1,3 @@
 # denmark
-test project to improve my skills in HTML/CSS/JS
+🇩🇰🏨 booking website for Hut Hotel
+test project to improve my skills in HTML/CSS
